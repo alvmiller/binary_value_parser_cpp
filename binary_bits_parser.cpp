@@ -13,7 +13,7 @@ binary_bits_parser (unsigned long long res, char symbol, Ts ... symbols) {
 template<char ... Symbols>
 constexpr unsigned long long operator""_bin()
 {
-  return binary_bits_parser(0ull, Symbols ...);
+    return binary_bits_parser(0ull, Symbols ...);
 }
 
 int main()
